@@ -13,7 +13,7 @@ if [ "${TAR_FILETYPE}" != "f" ]; then
    exit
 fi
 
-if [[ "${TAR_FILENAME}" =~ "checksum" || "${TAR_FILENAME}" == "ova.xml" ]]; then
+if [[ "${TAR_FILENAME}" =~ "checksum" || "${TAR_FILENAME}" == "ova.xml" || "${TAR_FILENAME}" == *.xxhash ]]; then
    exit
 fi
 
