@@ -4,7 +4,7 @@
 # License: GPL
 #
 # Sample usage:
-# wget --http-user=x --http-password=y http://your.xen.server.host/export?uuid=<VM_UUID> -O - | tar --to-command=./xva-conv.sh -xf -
+# curl -v -u root:secret http://your.xen.server.host/export?uuid=<VM_UUID> | tar --to-command=xva-conv.sh -xf -
 #
 
 TMP_LASTNAME_PREFIX="/tmp/lastname"
